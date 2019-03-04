@@ -12,7 +12,7 @@ if(isset($_POST['action'])){
     $count = $count + 1;
   }
 
-  if($q2val == "A dove"){
+  if($q2val == " A dove"){
     $count = $count + 1;
   }
 
@@ -55,7 +55,7 @@ if(isset($_POST['action'])){
   echo "Correct answer : Do Android's Dream of Electic Sheep? <br>";
   echo "</div> <br>";
 
-  echo "<div> Total Correct: " . $count "<br>";
+  echo "<div> Total Correct: " . $count . "<br>";
   echo "Grade: " . $score . "% </div>";
 }
 
