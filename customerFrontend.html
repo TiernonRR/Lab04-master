@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Water</title>
+</head>
+<body>
+  <h1>Water, and that's it!</h1>
+  <form action="customerBackend.php">
+    <div id = "itemOne">
+      <image src = "images/blk_water.jpg"/><br>
+      <input type = "number" placeholder="Quantity" /><br>
+    </div>
+
+    <div id = "itemTwo">
+      <image src = "images/boxed_water.jpg"/><br>
+      <input type = "number" placeholder="Quantity" /><br>
+    </div>
+
+    <div id = "itemThree">
+      <image src = "images/diamond_water.jpg"/><br>
+      <input type = "number" placeholder="Quantity" /><br>
+    </div>
+
+    <h3>Choose a shipping method: </h3>
+    <input type="radio" name="method" value="free">Free 7 Day</input><br>
+    <input type="radio" name="method" value="overNight">$50.00 Over Night</input><br>
+    <input type="radio" name="method" value="threeDay">$5.00 Three Day</input><br><br>
+
+    <input type = "reset" value = "Reset">
+    <input type="submit" value="Submit">
+  </form>
+  <script src="formChecker.js"></script>
+</body>
+</html>
