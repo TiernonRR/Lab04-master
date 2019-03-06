@@ -16,9 +16,11 @@
 
   if($shipMethod == "overNight"){
     $shipPrice = 50;
+    $shipMethod = "Over Night";
   }
   else if($shipMethod == "threeDay"){
     $shipPrice = 5;
+    $shipMethod = "Three Day";
   }
 
   $totalPrice = $firstPrice + $secondPrice + $thirdPrice + $shipPrice;
@@ -29,8 +31,8 @@
   echo "<tr><td>Item One</td><td>" . $iOneQty .  "</td><td>$10.00</td><td>$" . $firstPrice . ".00</td></tr>";
   echo "<tr><td>Item Two</td><td>" . $iTwoQty .  "</td><td>$25.00</td><td>$" . $secondPrice . ".00</td></tr>";
   echo "<tr><td>Item Three</td><td>" . $iThreeQty .  "</td><td>$50.00</td><td>$" . $thirdPrice . ".00</td></tr>";
-  echo "<tr><td>Shipping</td><td>" . $shipMethod . "</td><td>" . $shipPrice . "</td></tr>";
-  echo "<tr><td>Total Cost</td><td>$" . $totalPrice . "</td><td></td></tr></table></center>";
+  echo "<tr><td>Shipping</td><td>" . $shipMethod . "</td><td>$" . $shipPrice . ".00</td><td></td></tr>";
+  echo "<tr><td>Total Cost</td><td>$" . $totalPrice . "</td><td></td><td></td></tr></table></center>";
 
 
 
