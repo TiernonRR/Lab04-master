@@ -1,35 +1,36 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Water</title>
 </head>
 <body>
   <h1>Water, and that's it!</h1>
-  <form action="customerBackend.php">
+  <form id = "storeForm" onsubmit="checkForm()">
     <div class = "row">
     <div id = "col">
       <image src = "images/blk_water.jpg"/>
-      <input type = "number" placeholder="Quantity" />
+      <input id = "itemOne" type = "number" placeholder="Quantity" />
     </div>
 
     <div id = "col">
       <image src = "images/boxed_water.jpg"/>
-      <input type = "number" placeholder="Quantity" />
+      <input id = "itemTwo" type = "number" placeholder="Quantity" />
     </div>
 
     <div id = "col">
       <image src = "images/diamond_water.jpg"/>
-      <input type = "number" placeholder="Quantity" />
+      <input id = "itemThree" type = "number" placeholder="Quantity" />
     </div>
   </div>
     <h3>Choose a shipping method: </h3>
-    <input type="radio" name="method" value="free">Free 7 Day</input><br>
+    <input type="radio" name="method" value="free" required>Free 7 Day</input><br>
     <input type="radio" name="method" value="overNight">$50.00 Over Night</input><br>
     <input type="radio" name="method" value="threeDay">$5.00 Three Day</input><br><br>
 
-    <input type = "text" placeholder="Username" />
-    <input type = "text" placeholder="Password" />
+    <input id = "Username" type = "text" placeholder="Username" />
+    <input id = "Password" type = "text" placeholder="Password" />
 
     <br><br>
 

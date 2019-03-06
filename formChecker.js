@@ -2,37 +2,49 @@ function checkQuantities(){
     let firstItem = document.getElementById("itemOne").value;
     let secondItem = document.getElementById("itemTwo").value;
     let thirdItem = document.getElementById("itemThree").value;
-
-    if(firstItem == null){
-        return(false;)
+    
+    if(firstItem.length == 0 || secondItem.length == 0 ||thirdItem.length == 0){
+        return(1);
     }
-    if(secondItem == null){
-        return(false;)
+    if(firstItem < 0 || secondItem < 0 || thirdItem < 0){
+        return(2);
     }
-    if(thirdItem == null){
-        return(false;)
-    }
-
-    return(true);
+    return(3);
 }
 
-function radioSelect(){
-    let firstRadio = document.getElementById('free').checked;
-    let secondRadio = document.getElementById('overNight').checked;
-    let thirdRadio = document.getElementById('threeDay').checked;
+function loginCheck(){
+    let userName = document.getElementById("Username").value;
+    let password = document.getElementById("Password").value;
 
-    if(firstRadio || secondRadio || thirdRadio){
-        return true;
+    console.log(password);
+
+    if(!(userName.includes("@")) || !(userName.includes(".com"))){
+        return(1);
+    }
+    if(password.length == 0){
+        return(2);
     }
 
-    return false;
+    return(3);
 }
 
 function checkForm(){
     let quanCheck   = checkQuantities();
-    let radioSelect = checkRadio();
-    
-    if(quanCheck && radioSelect){
-        //send off form
+    let credCheck   = loginCheck();
+
+    if(quanCheck == 1){
+        alert("Don't leave quanitity fields blank!");
     }
+    else if(quanCheck == 2){
+        alert("Quantities must be a positive value!");
+    }
+
+    if(credCheck == 1){
+        alert("Please, enter a valid email address.");
+    }
+    else if(credCheck == 2){
+        alert("Please, enter a password.");
+    }
+
+
 }
