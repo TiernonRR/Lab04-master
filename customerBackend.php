@@ -1,5 +1,5 @@
 <?php
-
+    echo '<link rel="stylesheet" type="text/css" href="style.css">';
 
   $iOneQty = $_POST['itemOne'];
   $iTwoQty = $_POST['itemTwo'];
@@ -23,14 +23,14 @@
 
   $totalPrice = $firstPrice + $secondPrice + $thirdPrice + $shipPrice;
 
-  echo "<p>" . "Welcome!  Your password is " . $Password . "</p>";
+  echo "<h2>" . "Welcome!  Your password is " . $Password . ", and the following is your receipt!</h2>";
 
-  echo "<table><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
+  echo "<center><table><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
   echo "<tr><td>Item One</td><td>" . $iOneQty .  "</td><td>$10.00</td><td>$" . $firstPrice . ".00</td></tr>";
   echo "<tr><td>Item Two</td><td>" . $iTwoQty .  "</td><td>$25.00</td><td>$" . $secondPrice . ".00</td></tr>";
   echo "<tr><td>Item Three</td><td>" . $iThreeQty .  "</td><td>$50.00</td><td>$" . $thirdPrice . ".00</td></tr>";
   echo "<tr><td>Shipping</td><td>" . $shipMethod . "</td><td>" . $shipPrice . "</td></tr>";
-  echo "<tr><td>Total Cost</td><td>$" . $totalPrice . "</td></tr></table>";
+  echo "<tr><td>Total Cost</td><td>$" . $totalPrice . "</td><td></td></tr></table></center>";
 
 
 

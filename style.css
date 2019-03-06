@@ -8,6 +8,10 @@ h1{
   font-family: verdana;
 }
 
+h2{
+  font-family: verdana;
+}
+
 body{
   text-align: center;
   background-color: #f4c842;
@@ -29,6 +33,7 @@ body{
 
 table, th, td {
   border: 1px solid black;
+  color: white;
 }
 
 td{
