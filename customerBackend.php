@@ -1,6 +1,6 @@
 <?php
 
-if(isset($_POST['action'])){
+
   $iOneQty = $_POST['itemOne'];
   $iTwoQty = $_POST['itemTwo'];
   $iThreeQty = $_POST['itemThree'];
@@ -23,15 +23,15 @@ if(isset($_POST['action'])){
 
   $totalPrice = $firstPrice + $secondPrice + $thirdPrice + $shipPrice;
 
-  echo "<p id = " . ""wMessage"". ">" . "Welcome!  Your password is " . $Password . "/>";
+  echo "<p>" . "Welcome!  Your password is " . $Password . "</p>";
 
-  echo "<table><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td>";
-  echo "<table><tr><td></td><td>Item One</td><td>$10.00</td><td>" . $firstPrice . "</td>";
-  echo "<table><tr><td></td><td>Item Two</td><td>$25.00</td><td>" . $secondPrice . "</td>";
-  echo "<table><tr><td></td><td>Item Three</td><td>$50.00</td><td>" . $thirdPrice . "</td>";
-  echo "<table><tr><td></td><td>Shipping</td><td>" . $shipMethod . "</td><td>" . $shipPrice . "</td>";
-  echo "<table><tr><td></td><td>Total Cost</td><td>$" . $totalPrice . "</td>";
-  
-}
+  echo "<table><tr><td></td><td>Quantity</td><td>Cost Per Item</td><td>Sub Total</td></tr>";
+  echo "<tr><td>Item One</td><td>" . $iOneQty .  "</td><td>$10.00</td><td>$" . $firstPrice . ".00</td></tr>";
+  echo "<tr><td>Item Two</td><td>" . $iTwoQty .  "</td><td>$25.00</td><td>$" . $secondPrice . ".00</td></tr>";
+  echo "<tr><td>Item Three</td><td>" . $iThreeQty .  "</td><td>$50.00</td><td>$" . $thirdPrice . ".00</td></tr>";
+  echo "<tr><td>Shipping</td><td>" . $shipMethod . "</td><td>" . $shipPrice . "</td></tr>";
+  echo "<tr><td>Total Cost</td><td>$" . $totalPrice . "</td></tr></table>";
+
+
 
  ?>
