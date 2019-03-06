@@ -7,21 +7,21 @@
 </head>
 <body>
   <h1>Water, and that's it!</h1>
-  <form id = "storeForm" onsubmit="checkForm()">
+  <form name = "storeForm" onsubmit="return checkForm()" action="customerBackend.php" method="post">
     <div class = "row">
     <div id = "col">
       <image src = "images/blk_water.jpg"/>
-      <input id = "itemOne" type = "number" placeholder="Quantity" />
+      <input name = "itemOne" id = "itemOne" type = "number" placeholder="Quantity" />
     </div>
 
     <div id = "col">
       <image src = "images/boxed_water.jpg"/>
-      <input id = "itemTwo" type = "number" placeholder="Quantity" />
+      <input name = "itemTwo" id = "itemTwo" type = "number" placeholder="Quantity" />
     </div>
 
     <div id = "col">
       <image src = "images/diamond_water.jpg"/>
-      <input id = "itemThree" type = "number" placeholder="Quantity" />
+      <input name = "itemThree" id = "itemThree" type = "number" placeholder="Quantity" />
     </div>
   </div>
     <h3>Choose a shipping method: </h3>
@@ -30,7 +30,7 @@
     <input type="radio" name="method" value="threeDay">$5.00 Three Day</input><br><br>
 
     <input id = "Username" type = "text" placeholder="Username" />
-    <input id = "Password" type = "text" placeholder="Password" />
+    <input name = "Password" id = "Password" type = "text" placeholder="Password" />
 
     <br><br>
 

@@ -2,7 +2,7 @@ function checkQuantities(){
     let firstItem = document.getElementById("itemOne").value;
     let secondItem = document.getElementById("itemTwo").value;
     let thirdItem = document.getElementById("itemThree").value;
-    
+
     if(firstItem.length == 0 || secondItem.length == 0 ||thirdItem.length == 0){
         return(1);
     }
@@ -45,6 +45,9 @@ function checkForm(){
     else if(credCheck == 2){
         alert("Please, enter a password.");
     }
-
+    if(credCheck != 3 || quanCheck != 3){
+      return false;
+    }
+    return true;
 
 }

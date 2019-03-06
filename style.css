@@ -4,6 +4,10 @@ img{
   border: black solid 1px;
 }
 
+h1{
+  font-family: verdana;
+}
+
 body{
   text-align: center;
   background-color: #f4c842;
@@ -21,4 +25,16 @@ body{
   content: "";
   clear: both;
   display: table;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td{
+  background-color: blue;
+}
+
+table{
+  background-color: red;
 }
