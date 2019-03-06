@@ -7,21 +7,22 @@
 <body>
   <h1>Water, and that's it!</h1>
   <form action="customerBackend.php">
-    <div id = "itemOne">
-      <image src = "images/blk_water.jpg"/><br>
-      <input type = "number" placeholder="Quantity" /><br>
+    <div class = "row">
+    <div id = "col">
+      <image src = "images/blk_water.jpg"/>
+      <input type = "number" placeholder="Quantity" />
     </div>
 
-    <div id = "itemTwo">
-      <image src = "images/boxed_water.jpg"/><br>
-      <input type = "number" placeholder="Quantity" /><br>
+    <div id = "col">
+      <image src = "images/boxed_water.jpg"/>
+      <input type = "number" placeholder="Quantity" />
     </div>
 
-    <div id = "itemThree">
-      <image src = "images/diamond_water.jpg"/><br>
-      <input type = "number" placeholder="Quantity" /><br>
+    <div id = "col">
+      <image src = "images/diamond_water.jpg"/>
+      <input type = "number" placeholder="Quantity" />
     </div>
-
+  </div>
     <h3>Choose a shipping method: </h3>
     <input type="radio" name="method" value="free">Free 7 Day</input><br>
     <input type="radio" name="method" value="overNight">$50.00 Over Night</input><br>
